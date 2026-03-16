@@ -18,3 +18,54 @@ a{color:#9ec3ff}.sub{color:var(--muted)}.disclosure{background:#1d2944;border-le
 .guide-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
 .guide-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
 .guide-card .card-body{padding:1rem}
+
+
+/* 3D card system */
+.panel,.card,.content{
+  box-shadow: 0 8px 20px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.03);
+}
+.card{
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.05);
+  border-color: color-mix(in oklab, var(--accent) 35%, var(--line));
+}
+
+/* Premium comparison table block */
+.compare-table-wrap{
+  margin: 1rem 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,255,255,.025), rgba(255,255,255,.01));
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+}
+.compare-table-wrap table{
+  margin: 0;
+  border: 0;
+}
+.compare-table-wrap thead th{
+  background: linear-gradient(180deg, #1f2e4e, #192742);
+  color: #e8f1ff;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+.compare-table-wrap th,
+.compare-table-wrap td{
+  border: 1px solid rgba(255,255,255,.08);
+  padding: .75rem .8rem;
+  vertical-align: top;
+}
+.compare-table-wrap tbody tr:nth-child(odd){
+  background: rgba(255,255,255,.015);
+}
+.compare-table-wrap tbody tr:hover{
+  background: rgba(138,180,255,.08);
+}
+.table-caption{
+  margin:.35rem 0 .65rem;
+  color: var(--muted);
+  font-size:.95rem;
+}
