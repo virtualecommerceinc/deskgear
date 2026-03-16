@@ -69,3 +69,5 @@ a{color:#9ec3ff}.sub{color:var(--muted)}.disclosure{background:#1d2944;border-le
   color: var(--muted);
   font-size:.95rem;
 }
+/* Build my setup page polish */
+.content ol li{margin:.5rem 0}
