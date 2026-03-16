@@ -12,3 +12,9 @@ a{color:#9ec3ff}.sub{color:var(--muted)}.disclosure{background:#1d2944;border-le
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,13,24,.75),rgba(8,13,24,.2));padding:1rem;display:flex;flex-direction:column;justify-content:center;gap:.5rem}
 .guide-hero img{width:100%;display:block;border-radius:.75rem}
 .footer{opacity:.9;padding-bottom:2rem}
+
+/* Persona card image consistency */
+.guide-cards{align-items:stretch}
+.guide-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.guide-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.guide-card .card-body{padding:1rem}
